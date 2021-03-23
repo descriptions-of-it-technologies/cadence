@@ -24,5 +24,6 @@
 `docker run --network=host --rm ubercadence/cli:master --do test-domain workflow list -op` - list started workflow
 `docker run --network=host --rm ubercadence/cli:master --do test-domain workflow terminate -wid workflowId` - terminate workflow with workflowId
 `docker run --network=host --rm ubercadence/cli:master --do test-domain workflow list` - list terminated workflow
+`docker run --network=host --rm ubercadence/cli:master --do test-domain workflow showid [workflowId]`
 
-docker run --network=host --rm ubercadence/cli:master --do test-domain workflow start --et 300  --tl hello --wt HelloWorkflow::getGreetings --input \"World\"  
+`docker run --network=host --rm ubercadence/cli:master --do test-domain workflow start --et 300  --tl hello --wt HelloWorkflow::getGreetings --input \"World\"`  
